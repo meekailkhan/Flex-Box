@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        #wrapper{
+            background-color: #eee;
+            list-style: none;
+            margin: 50px;
+            padding: 20px;
+        }
+       #wrapper li{
+        display: flex;
+        padding: 5px 0px;
+       }  
+       
+        #x{
+        flex: 1;
+       }
+
+
+       @media screen and (min-width:300px) and (max-width:499) {
+            #wrapper li{
+                flex-direction: column;
+            }
+            #wrapper li input{
+                flex: 2;
+            }
+        }
+       @media screen and (min-width:500px) {
+            #wrapper li input{
+            flex: 2;
+        }
+        }
+       @media screen and (min-width:768px) {
+            #wrapper li input{
+            flex: 3;
+        }
+        }
+       @media screen and (min-width:992px) {
+            #wrapper li input{
+            flex: 6;
+        }
+        }
+       
+       @media screen and (min-width:1300px) {
+            #wrapper li input{
+            flex: 9;
+        }
+        }
+        
+        
+       
+       
+       
+
+    </style>
+</head>
+<body>
+    <h1>aling-form with flex-box</h1>
+    <form action="">
+    <ul id="wrapper">
+        <li id="y">
+            <label for=""id="x">name</label>
+            <input type="text">
+        </li>
+        <li id="y">
+            <label for=""id="x">class name</label>
+            <input type="text">
+        </li>
+        <li id="y">
+            <label for=""id="x">email address</label>
+            <input type="email">
+        </li>
+        <li id="y">
+            <button type="submit">save</button>
+        </li>
+    </ul>
+    </form>
+</body>
+</html>

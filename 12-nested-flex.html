@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                background-color: #fff;
+            }
+            .container{
+                background-color: aqua;
+                margin: 50px;
+                padding: 5px;
+                border: 3px solid;
+
+
+                display: flex;
+                flex-direction: column;
+               
+            }
+            .meekail{
+               font-size: 20px;
+               font-weight: bold;
+               text-align: center;
+               color: #220606;
+               height: 100px;
+               
+            }
+            .one{
+                
+                background-color: hotpink;
+            }
+            .two{
+                background-color: yellowgreen;
+            }
+            .three{
+                background-color: rgb(189, 18, 189);
+                display: flex;
+                flex-shrink: 0;
+            }
+            .four{
+                background-color: tomato;
+            }
+            .items{
+                background-color: bisque;
+                /* flex-grow: 1; */
+                margin: 5px;
+                /* padding: 10px; */
+                
+            }
+            .items1{
+                background-color: aqua;
+                flex-grow: 1;
+            }
+            .items2{
+                background-color: rgb(4, 1, 185);
+                flex-grow: 2;
+                
+            }
+            .items3{
+                background-color: rgb(233, 159, 132);
+                flex-grow: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>nested-flex</h1>
+        <div class="container">
+            <div class="meekail one">one</div>
+            <div class="meekail two">two</div>
+            <div class="meekail three">
+                <div class="items items1">a</div>
+                <div class="items items2">b</div>
+                <div class="items items3">c</div>
+            </div>
+            <div class="meekail four">four</div>
+        </div>
+    </body>
+</html>
